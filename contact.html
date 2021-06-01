@@ -14,9 +14,8 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.css">
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-    <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script> -->
+    <link style="height: 100px;width: 200px;" rel="shortcut icon" type="image/png" href="images/lo.png">
+    
 
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
   
@@ -181,12 +180,13 @@
 <br><i class="fas fa-mobile-alt text-success"></i>&nbsp 9562 200077
 </span>
 <div class="mb-4 mt-3 socialmedia ">
-<a href="https://www.facebook.com/Skintrack-tattoo-studio-101807091761599/" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-<a href="mailto:inkeranup@gmail.com" class="pl-3 pr-3"><span class="fa fa-envelope"></span></a>
-
-<a href="https://instagram.com/skintrack_tattoo?utm_medium=copy_link" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-<a href="https://www.pinterest.com/inkeranup/" class="pl-3 pr-3"><i class="fab fa-pinterest"></i></a>
-</div>
+  <div class="mb-4 mt-3 socialmedia ">
+    <a href="https://www.facebook.com/Skintrack-tattoo-106284678076760/" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+    <a href="mailto:inkeranup@gmail.com" class="pl-3 pr-3"><span class="fa fa-envelope"></span></a>
+  
+    <a href="https://www.instagram.com/explore/tags/skintracktattoo/" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+    <a href="https://www.pinterest.com/inkeranup/" class="pl-3 pr-3"><i class="fab fa-pinterest"></i></a>
+  </div>
             <p></p>
             <div class="embed-responsive embed-responsive-21by9">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62603.4849420352!2d75.79226593441317!3d11.282141985674434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65fcea4c640e1%3A0xb2ccd3f9c81d2596!2sSKINTRACK%20%EA%95%A5%20TATTOO!5e0!3m2!1sen!2sin!4v1622350734142!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -393,155 +393,6 @@ $("#phone").focusout(()=>{
           })
            return true
        }else { return false}
-  }
-  )
-  })
-
-
-
-  </script>
-<!-- popup -->
-<script> 
-  $(()=>{
-    $("#firstname_erro").hide()
-    $("#lastname_erro").hide()
-    $("#phone_erro").hide()
-    $("#email_erro").hide()
-    $("#message_erro").hide()
-
-    var error_firstnam=false
-    var error_lastnam=false
-    var error_emai=false
-    var error_phon=false
-    var error_messag=false
-//--------name validation
-    $("#firstnam").focusout(()=>{
-      checkfirstNam()
-      
-    })
-    checkfirstNam=()=>{
-      
-      var nameLength=$("#firstnam").val().length
-      if(nameLength<3 || nameLength >20){
-        $("#firstname_erro").text("*First Name should be between 3-20 characters")
-        $("#firstname_erro").show()
-        error_firstnam=true
-      }else{
-        $("#firstname_erro").hide()
-        
-      
-      }
-    }
-
-    $("#lastnam").focusout(()=>{
-      checkNam()
-    })
-    checkNam=()=>{
-      var nameLength=$("#firstnam").val().length
-      if(nameLength===0){
-        $("#lastname_erro").text("*Please enter your last name ")
-        $("#lastname_erro").show()
-        error_lastnam=true
-      }else{
-        $("#lastname_erro").hide()
-      }
-    }
-    //--------------------
-// ------------------------phone No validation
-$("#phon").focusout(()=>{
-      checkphon()
-      
-    })
-    checkphon=()=>{
-      var  value=$("#phon").val()
-      var phone=/^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;
-  
-      if(phone.test(value)){
-        
-        $("#phone_erro").hide()
-      }else{
-        
-        $("#phone_erro").text("*Please enter your valid phone number")
-        $("#phone_erro").show()
-        error_phon=true
-      
-      }
-    }
-// ------------------------------
-  //------------email validation
-  
-  $("#emai").focusout(()=>{
-      checkEmai()
-      
-    })
-
-    checkEmai=()=>{
-      var pattern= new RegExp(/^[+a-zA-Z0-9._-]+@[[+a-zA-Z0-9._-]+\.[+a-zA-Z]{2,4}$/i);
-      if (pattern.test($("#emai").val())){
-        $("#email_erro").hide()
-      }else{
-        $("#email_erro").text("*Invalid Email Address")
-        $("#email_erro").show()
-        error_emai=true
-      }
-    }
-  //----------------------------------
-
-
-
-  //---------------msg validation
-  $("#messag").focusout(()=>{
-      checkms()
-     
-    })
-    checkms=()=>{
-     
-      var subLength=$("#messag").val().length
-      if(subLength==0){
-        
-        $("#message_erro").text("*Message box should not be empty")
-        $("#message_erro").show()
-        error_messag=true
-      }else{
-       
-        $("#message_erro").hide()
-      }
-    }
-  //-----------------------------
-
-  $("#submit-for").submit((e)=>{
-     error_firstnam=false
-     error_lastnam=false
-     error_emai=false
-     error_phon=false
-     error_messag=false
-     checkfirstNam()
-     checkNam()
-     checkEmai()
-     checkphon()
-     checkms()
-
-     if(error_firstnam==false && error_lastnam==false && error_messag==false && error_phon==false && error_emai==false){
-      console.log("hirea");
-           e.preventDefault()
-          
-            $.ajax({
-                url:"https://docs.google.com/forms/u/0/d/e/1FAIpQLSfjMwmjJMroEt0oepDlg68Wo-DjF_mzAahsQHVDqmNQLOae4A/formResponse",
-                data:$("#submit-for").serialize(),
-                method:"post",
-                success:function (response){
-                   
-                    window.location.reload()
-                    //window.location.href="https://google.com"
-                },
-                error:function (err){
-          window.location.reload()
-        
-    
-                }
-            })
-       return true
-     }else { return false}
   }
   )
   })

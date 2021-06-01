@@ -1061,7 +1061,7 @@ font-weight: 800;
 }
 .box4{
   /* background-image: url(../images/g4.jpg); */
-  background-image: url(../images/minimaltatto/2.jpeg);
+  background-image: url(../images/minimaltatto/8.jpeg);
 }
 #slider .model{
 	height: 410px;
@@ -1169,7 +1169,7 @@ color: greenyellow;
 .static{
   text-align: center;
   position: fixed;
-  left: -28px;
+  left: -30px;
   top: 50%;
   line-height: 20px;
   z-index: 999;
@@ -1183,17 +1183,18 @@ color: greenyellow;
   border-bottom-right-radius:30px ;
 }
 .mainimg{
-  height: 76vh;
+  /* height: 76vh; */
   margin-top: 10px;
   
  
 }
 .sponsers{
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
 }
 .sponsers img{
-  width: 80%;
+  width: 86%;
 }
