@@ -1188,3 +1188,12 @@ color: greenyellow;
   
  
 }
+.sponsers{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.sponsers img{
+  width: 80%;
+}
