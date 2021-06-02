@@ -1198,3 +1198,19 @@ color: greenyellow;
 .sponsers img{
   width: 86%;
 }
+/* .googlerating{
+  background-color: #1da1f2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.google{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #25a040;
+} */
