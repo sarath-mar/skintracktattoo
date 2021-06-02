@@ -1137,14 +1137,7 @@ font-weight: 800;
 font-weight: 900;
 text-align: center;
 }
-.free{
-  height: 80px;
-  width: 100vw;
-  background-color:rgb(245, 244, 240);
-  position: relative;
-  top:-80px;
-  z-index: 9;
-}
+
 .sanvi{
   font-weight: 800;
   transition: 1s;
@@ -1197,4 +1190,12 @@ color: greenyellow;
 }
 .sponsers img{
   width: 86%;
+}
+.free{
+  height: 80px;
+  width: 100vw;
+  background-color:rgb(245,244,240);
+  position: relative;
+  top:38px;
+  z-index: 9;
 }
